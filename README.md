@@ -13,13 +13,13 @@ While there is a [massive number](https://www.google.com/search?q=c%2B%2B+ides) 
 
 ## Compilers
 
-Similarly to the IDEs, there are typically several C++ compilers available for every major OS platform. We'll be using the "default" compiler for each platform, distributed by the operating system's vendor as a part of their IDE/development toolset:
+Similarly to the IDEs, there are typically several C++ compilers available for every major OS platform. We'll be using the "default" compiler for each platform — the one that's distributed by the operating system's vendor as a part of their IDE/development toolset:
 
 | Platform | Compiler | Installation |
 | -------- | -------- | ------------ |
-| Mac      | clang    | Installed with [Xcode](#xcode); A standalone download is [available here](https://developer.apple.com/download/more/) (you'll be asked to log in with your Apple ID; search for "command line tools" once in). |
-| Windows  | Microsoft C/C++ compiler | Installed with [Visual Studio](#visual-studio-community); A standalone download is  [available here](https://visualstudio.microsoft.com/downloads/) under _Tools for Visual Studio 2017 > Build Tools for Visual Studio 2017_.  |
-| Linux    | gcc      | Included in all distribution; Open a terminal and run `sudo apt install build-essential` if it's not installed by default. |
+| Mac      | clang    | Installed with [Xcode](#xcode); a standalone download is [available here](https://developer.apple.com/download/more/) (you'll be asked to log in with your Apple ID; search for "command line tools" once in). |
+| Windows  | Microsoft C/C++ compiler | Installed with [Visual Studio](#visual-studio-community); a standalone download is  [available here](https://visualstudio.microsoft.com/downloads/) under _Tools for Visual Studio 2017 > Build Tools for Visual Studio 2017_.  |
+| Linux    | gcc      | Included in all distribution; open a terminal and run `sudo apt install build-essential` if it's not installed by default. |
 
 
 ## Xcode
@@ -65,7 +65,7 @@ Visual Studio Community is a [free edition](https://visualstudio.microsoft.com/v
 Visual Studio Code (VS Code) is a free, open source, customizable editor from Microsoft available on all major platforms. It includes [first-class support for C++](https://code.visualstudio.com/docs/languages/cpp), including debugging, syntax highlighting, code completion, linting and refactoring. It also comes with a [wealth of extensions](https://marketplace.visualstudio.com/vscode) that can be installed to further enhance the editor's functionality, effectively making it a full-fledged, extensible IDE.
 
 ### Installation
-  - [Download and install](https://code.visualstudio.com) VS Code
+  - [Download and install](https://code.visualstudio.com) VS Code.
   - Launch VS Code, click on [the Extensions icon](https://code.visualstudio.com/docs/editor/extension-gallery#_browse-for-extensions), search for and install the following extensions:
   
     - [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) extension from Microsoft.   
