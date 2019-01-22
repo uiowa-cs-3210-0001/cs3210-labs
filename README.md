@@ -85,3 +85,8 @@ Visual Studio Code (VS Code) is a free, open source, customizable editor from Mi
 
 #### Run
  - Click "▶ Build & Run" in the Status Bar at the bottom or press `F7`.
+
+
+## Questions/Problems?
+
+If you run into questions or problems while following this guide, please open a Github issue in this repo, and we'll take it from there.
