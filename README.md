@@ -28,7 +28,7 @@ Xcode is Apple's IDE for developing on Mac. It supports C++ out-of-the-box and c
 
 ### Installation
  
- - [Download and install](https://itunes.apple.com/us/app/xcode/id497799835) latest version of Xcode.
+ - [Install](https://itunes.apple.com/us/app/xcode/id497799835) Xcode.
  - Install the command line tools by opening a terminal and running the following command: `xcode-select --instal`.
 
 ### Creating, building and running a project
@@ -66,7 +66,7 @@ Visual Studio Code (VS Code) is a free, open source, customizable editor from Mi
 
 ### Installation
   - [Download and install](https://code.visualstudio.com) VS Code.
-  - Launch VS Code, click on [the Extensions icon](https://code.visualstudio.com/docs/editor/extension-gallery#_browse-for-extensions), search for and install the following extensions:
+  - Launch VS Code, click on [the Extensions icon](https://code.visualstudio.com/docs/editor/extension-gallery#_browse-for-extensions), search for and install all of the following extensions:
   
     - [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) extension from Microsoft.   
     - [Easy C++ projects](https://marketplace.visualstudio.com/items?itemName=acharluk.easy-cpp-projects) from Alejandro Charte Luque.
