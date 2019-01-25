@@ -21,6 +21,15 @@ Similarly to the IDEs, there are typically several C++ compilers available for e
 | Windows  | Microsoft C/C++ compiler | Installed with [Visual Studio](#visual-studio-community); a standalone download is  [available here](https://visualstudio.microsoft.com/downloads/) under _Tools for Visual Studio 2017 > Build Tools for Visual Studio 2017_.  |
 | Linux    | gcc      | Included in all distribution; open a terminal and run `sudo apt install build-essential` if it's not installed by default. |
 
+### C++17 support
+
+Most recent versions of the compilers listed above support all or most of the [C++17 standard](https://en.wikipedia.org/wiki/C%2B%2B17). You do have to **explicitly enable C++17 support**, though:
+
+| Compiler | Enabling C++17 support |
+| -------- | ---------------------- |
+| clang, gcc | Add `-std=c++17` to the compiler flags, e.g. `clang++ -std=c++17 main.cpp`. |
+| Microsoft C/C++ compiler | See [How to enable C++17 compiling in Visual Studio](https://stackoverflow.com/a/46759740), or manually add `/std:c++17` to the compiler flags, e.g. `cl /std:c++17 main.cpp`. |
+
 
 ## Xcode
 
