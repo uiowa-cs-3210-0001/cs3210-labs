@@ -44,7 +44,15 @@ int main()
 //     if ( !( in >> lparen >> p.x >> comma >> p.y >> rparen ) 
 //             || lparen != '(' || comma != ',' || rparen != ')'
 //             )
-//         throw std::runtime_error( "Error reading Point from stream" );
+//         {
+//             if ( !( in.exceptions() & std::ios_base::failbit ) )
+//             {
+//                 in.setstate( std::ios_base::failbit );
+//                 return in;
+//             }
+
+//             throw std::runtime_error( "Error reading Point from stream" );
+//         }
 
 //     result = p;
 //     return in;
