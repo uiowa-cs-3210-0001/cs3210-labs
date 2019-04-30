@@ -40,12 +40,13 @@ typedef multi_index_container<
         >
     > employee_set;
 
-template< typename Tag, typename MultiIndexContainer >
-void print_out_by( MultiIndexContainer const& s )
+
+template< typename Tag >
+void print_out_by( employee_set const& s )
 {
-    const typename index<MultiIndexContainer,Tag>::type& i = get<Tag>( s );
-    typedef typename MultiIndexContainer::value_type value_type;
-    std::copy( i.begin(), i.end(), ostream_iterator<value_type>( std::cout ) );
+    auto const& index = get<Tag>( s );
+    std::copy( index.begin(), index.end(), 
+        ostream_iterator<employee>( std::cout ) );
 }
 
 
@@ -53,9 +54,9 @@ int main()
 {
     employee_set es;
 
-    es.insert( employee( 0, "Joe", 31 ));
-    es.insert( employee( 1, "Robert", 27 ));
-    es.insert( employee( 2, "John", 40 ));
+    es.insert( employee( 0, "Joe", 31 ) );
+    es.insert( employee( 1, "Robert", 27 ) );
+    es.insert( employee( 2, "John", 40 ) );
 
     // next insertion will fail, as there is an employee with
     // the same ID
@@ -75,4 +76,10 @@ int main()
     std::cout << "by age" << std::endl;
     print_out_by<age>( es );
     std::cout << std::endl;
+
+    auto& employees_by_name = es.get<name>();
+    auto [ first, last ] = employees_by_name.equal_range( "John" );
+    std::cout << "Johns:" << endl;
+    std::copy( first, last, 
+        ostream_iterator<employee>( std::cout ) );
 }
